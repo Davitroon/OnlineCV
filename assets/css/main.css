@@ -2188,12 +2188,12 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 100%;
+			border-radius: 40%;
+			border: #3ba388 7px solid;
 			overflow: hidden;
 		}
 
 			.image.avatar img {
-				border-radius: 100%;
 				display: block;
 				width: 100%;
 			}
@@ -3315,9 +3315,9 @@ input, select, textarea {
 
 	}
 
-/* Mis clases */
+/* My classes */
 
-	/* Boton descarga CV */
+	/* Download button CV */
 		.cssbuttons-io-button {
 		display: flex;
 		align-items: center;
@@ -3358,4 +3358,9 @@ input, select, textarea {
 			display:block;
 		}
 
-		
+	/* Dates */
+	.date-text {
+		font-style: italic;
+		font-size: 16px;
+		color: rgb(179, 179, 179);
+	}
