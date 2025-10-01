@@ -117,7 +117,6 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4acaa8 !important;
 		}
 
 	strong, b {
@@ -2701,6 +2700,7 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background: #4acaa8;
+		border-left: 7px solid #529c88;
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -3358,9 +3358,74 @@ input, select, textarea {
 			display:block;
 		}
 
-	/* Dates */
 	.date-text {
 		font-style: italic;
 		font-size: 16px;
 		color: rgb(179, 179, 179);
 	}
+
+	#technologies {
+		display: flex;
+		gap: 13px;
+		justify-content: center;
+	}
+
+	.tech-icon {
+		display: flex;
+		transition: 0.3s;
+		align-items: center;
+	}
+
+	.tech-icon img{
+		min-width: 30px;
+		width: 35px;
+		max-height: 40px;
+	}
+
+	.tech-icon:hover {
+		transform:scale(1.2);
+		opacity: 90%;
+	}
+
+
+.accordion {
+	width: 50vw;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	overflow: hidden;
+	font-family: sans-serif;
+}
+
+.accordion-item {
+  	border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+	width: 100%;
+	padding: 12px;
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+	background: #f8f8f8;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	transition: 0.3s;
+}
+
+.accordion-header:hover {
+  	background: #e6e6e6;
+}
+
+.accordion-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.4s ease;
+	background: #fff;
+	padding: 0 12px;
+}
+
+.accordion-content p {
+  	margin: 12px 0;
+}
+	
