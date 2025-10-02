@@ -100,26 +100,104 @@
 							<section id="two">
 								<div class="container">
 									<h3>Proyectos</h3>
-									<p>He llegado a desarollar varios proyectos por propositos académicos, tanto en solitario como en grupo. Te invito a hecharles un ojo.</p>
+									<p>He desarrollado varios proyectos por propositos académicos, tanto en solitario como en grupo. Te invito a hecharles un ojo.</p>
 									<div class="accordion">
 										<div class="accordion-item">
 											<button class="accordion-header">Casino virtual</button>
 											<div class="accordion-content">
-											<p>Contenido de la sección 1. Aquí puedes poner texto, imágenes, etc.</p>
+											<p>
+												Como proyecto integrador de fin de año para el grado superior, se nos pidió ir creando un programa que disponga de un CRUD a lo largo 
+												del curso usando las diferentes tecnologías y herramientas que ibamos aprendiendo <i>(conexión a base de datos, 
+												manejo de excepciones, interfaz de usuario...)</i>.
+											</p>
+
+											<p>
+												La temática que yo elegí fue la de un casino. En este, el usuario podría gestionar tanto los clientes que entren al casino a jugar,
+												como los diferentes puestos de juegos <i>(hay tanto blackjack como tragaperras para elegir).</i>
+											</p>
+
+											<p>
+												Es el usuario quien deberá usar a estos clientes para poder apostar en los juegos. Tanto el cliente como el juego deberá tener
+												dinero suficiente para hacer apuestas.
+											</p>
+
+											<p>
+												El programa cuenta con una interfaz intuitiva, una conexión a base de datos para no perder los datos al cerrar el programa y un sistema
+												de inicio de sesión, donde cada usuario tendrá sus clientes, juegos y estadísticas.
+											</p>
+
+											<p>
+												Más que un programa de gestión, quise orientarlo más hacia lo que sería un videojuego, para que fuese entretenido tanto de programar
+												como de usar. Quise haber integrado logros para cada usuario y más variedad de juegos a jugar, además de mas interacción con los juegos
+												y clientes, quizás en un futuro lo actualize con nuevas mecánicas y un instalador más sencillo.
+											</p>
+
+											<div class="download-div" style="margin-bottom: 10px;">
+												<button onclick="window.open('https://github.com/Davitroon/VirtualCasino', '_blank')" title="Ver repositorio de casino virtual"
+												 type="button"  class="cssbuttons-io-button">
+													<span> <i class="icon brands fa-github"></i> Ver repositorio</span>
+												</button>
+											</div>
 											</div>
 										</div>
 
 										<div class="accordion-item">
 											<button class="accordion-header">Truth or Dare</button>
 											<div class="accordion-content">
-											<p>Contenido de la sección 2.</p>
+												<p>
+													Similar al caso anterior, este fue un proyecto de fin de año del mismo curso, solo que para la asignatura de Desarrollo Web.
+													Se nos pedía una aplicación web que se conectase a una api para recoger datos y almacenase información en el local storage.
+												</p>
+
+												<p>
+													En mi busqueda me encontré una sobre el clásico juego de "verdad o reto". Contaba con diferentes tipos de preguntas, con filtros,
+													idiomas... Era justo lo que necesitaba para el proyecto.
+												</p>
+
+												<p>
+													Dentro de la aplicación, podras crear una sesión o jugar con una sesion guardada. Las sesiones son la configuración de la partida,
+													donde marcas que tipos de preguntas quieres que salgan, el idioma, los filtros, los jugadores y demás.
+												</p>
+
+												<p>
+													Al entrar a jugar, uno de los jugadores al azar deberá elegir que pregunta responder, el programa le mostrará la pregunta y se 
+													pasará al siguiente jugar. Es una interfaz de juego sencilla pensada para que sea cómodo jugar.
+												</p>
+
+												<div class="download-div" style="margin-bottom: 10px;">
+													<button onclick="window.open('https://github.com/Davitroon/TruthOrDare', '_blank')" title="Ver repositorio de truth or dare"
+													type="button"  class="cssbuttons-io-button">
+														<span> <i class="icon brands fa-github"></i> Ver repositorio</span>
+													</button>
+												</div>
 											</div>
 										</div>
 
 										<div class="accordion-item">
 											<button class="accordion-header">PlayZone</button>
 											<div class="accordion-content">
-											<p>Contenido de la sección 3.</p>
+												<p>
+													PlayZone fue un proyecto grupal que se nos pidió en la asignatura de Desarrollo Web. Se requería el uso de temporizadores,
+													drag and drop, listeneres y más funciones que vimos en el temario.
+												</p>
+
+												<p>
+													Entre tres compañeros decidimos hacer una pagina WEB de juegos, cada uno asignado a un juego diferente, mientras que supervisaba
+													y ayudaba al resto del equipo en sus juegos.
+												</p>
+
+												<p>
+													Acabamos desarollando un quiz, uno juego de encontrar las parejas y un juego de estrategia similar al videojuego 
+													<a href="https://play.google.com/store/apps/details?id=com.ea.gp.pvzheroes&hl=es" target="blank" title="Página de Plantas vs Zombies 
+													Heroes">Plantas vs Zombies Heroes</a>, evidentemente más simplificado.
+												</p>
+
+												<div class="download-div" style="margin-bottom: 10px;">
+													<button onclick="window.open('https://github.com/SergioGMunoz/PlayZone-Web-Minigames', '_blank')" title="Ver repositorio de truth or dare"
+													type="button"  class="cssbuttons-io-button">
+														<span> <i class="icon brands fa-github"></i> Ver repositorio</span>
+													</button>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -136,16 +214,16 @@
 									<form id="contact-form" method="post" action="https://formspree.io/f/xgvnalpr">
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
-												<input type="text" name="name" id="name" placeholder="Nombre" />
+												<input type="text" name="name" id="name" placeholder="Nombre" required />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="email" name="email" id="email" placeholder="Email" />
+												<input type="email" name="email" id="email" placeholder="Email" required />
 											</div>
 											<div class="col-12">
-												<input type="text" name="subject" id="subject" placeholder="Asunto" />
+												<input type="text" name="subject" id="subject" placeholder="Asunto" required />
 											</div>
 											<div class="col-12">
-												<textarea name="message" id="message" placeholder="Cuerpo mensaje (max. 525 caracteres)" rows="6" style="resize: none;" maxlength="525"></textarea>
+												<textarea name="message" id="message" placeholder="Cuerpo mensaje (max. 525 caracteres)" rows="6" style="resize: none;" maxlength="525" required></textarea>
 											</div>
 											<div class="col-12">
 												<ul class="actions">

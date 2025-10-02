@@ -176,17 +176,24 @@ form.addEventListener("submit", async (e) => {
     });
 
     if (response.ok) {
-      formStatus.style.display = "block";   
-      form.reset();    
+		form.reset();  
+		formStatus.style.display = "block";
+		formStatus.style.display = "green"; 
+		formStatus.style.display = "✅ Mensaje enviado";      
 	                   
     } else {
-      formStatus.style.display = "block";
-      formStatus.style.color = "red";
-      formStatus.textContent = "❌ Error al enviar el mensaje.";
-    }
-  } catch (error) {
-    formStatus.style.display = "block";
-    formStatus.style.color = "red";
-    formStatus.textContent = "❌ Hubo un problema. Intenta más tarde.";
+		formStatus.style.display = "block";
+		formStatus.style.color = "red";
+		formStatus.textContent = "❌ Error al enviar el mensaje.";
+		}
+	} catch (error) {
+		formStatus.style.display = "block";
+		formStatus.style.color = "red";
+		formStatus.textContent = "❌ Hubo un problema. Intenta más tarde.";
   }
+});
+
+form.addEventListener("reset", () => {
+
+	formStatus.style.display = 'none';
 });
